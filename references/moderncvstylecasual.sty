@@ -135,6 +135,7 @@
 
 
 
+
 \newcommand{\cvdoublecolumn}[2]{%
   \cvitem[0.75em]{}{%
     \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#1\end{minipage}%
@@ -155,14 +156,11 @@
     \ifthenelse{\equal{#3}{}}{}{#3\newline}%
     \ifthenelse{\equal{#4}{}}{}{#4\newline}%
     \ifthenelse{\equal{#5}{}}{}{#5\newline}%
-    \ifthenelse{\equal{#6}{}}{}{\faEnvelope~\texttt{#6}\newline}%
-    \ifthenelse{\equal{#7}{}}{}{\faPhone~#7}}
+    \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{#6}\newline}%
+    \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
 
 
 
-%% Headings command
-%\titleformat{\section}{\color{headings}
-%\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{} {0em}{}
 
 
 \renewcommand*{\makelettertitle}{%
