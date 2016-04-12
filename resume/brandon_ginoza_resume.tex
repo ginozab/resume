@@ -1,0 +1,426 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\documentclass[]{deedy-resume-openfont}
+\documentclass[]{brandon_ginoza_resume}
+\usepackage{fontspec}
+\usepackage{fontawesome}
+
+%\documentclass{article}
+%\usepackage{graphicx,calc}
+\usepackage{graphicx}
+%\newlength\myheight
+%\newlength\mydepth
+%\settototalheight\myheight{Xygp}
+%\settodepth\mydepth{Xygp}
+%\setlength\fboxsep{0pt}
+
+\usepackage{graphicx}
+\newcommand*{\img}[1]{%
+  \raisebox{-.1\baselineskip}{%
+    \includegraphics[
+      height=.83\baselineskip,
+      width=.83\baselineskip,
+      keepaspectratio,
+      ]{#1}%
+  }%
+}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Brandon}{Ginoza}{ %\urlstyle{same}\url{http://debarghyadas.com} \\
+\href{mailto:ginozab@allegheny.edu}{\faEnvelope\hspace{.05in}ginozab@allegheny.edu} | \faPhone\hspace{.05in}909.664.4543 \\
+%Objective: To secure a <enter job type> job that will <enter objective> by the summer of 2016.
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ADDRESS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Address}
+%17365 Sara Lane \\
+%Chino Hills, CA
+%91709
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Allegheny College}
+\descript{BS in Computer Science}
+\location{Minor in Economics}
+\location{Expected May 2016 | Meadville, PA}
+\location{Major GPA: 3.534 / 4.0}
+%\location{Cumulative GPA: 3.15 / 4.0}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Honors
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Honors} 
+%\begin{tabular}{rll}
+%2015	     & Cupper Research Scholar\\
+%2015		 & Alden Scholar/ Dean's List\\
+%% 2014	     & 2\textsuperscript{nd} most points  & Google Code Jam, Qualification Round\\
+%% 2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+%% 2013	     & National  & Jump Trading Challenge Finalist\\
+%% 2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+%% 2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+%% 2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+%% 2010     & National & Comp. Soc. of India's National Programming Contest\\
+%\end{tabular}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Links}
+\href{https://github.com/ginozab}{\faGithub \custombold{ github.com/ginozab}} \\
+%\href{https://bitbucket.org/ginozab}{\raisebox{-\mydepth}{\fbox{\includegraphics[height=\myheight]{imgs/bitbucket-logo_318-55983.pdf}}} \custombold{ bitbucket.org/ginozab}} \\
+%\href{https://bitbucket.org/ginozab/}{\faBitbucket \custombold{ bitbucket.org/ginozab}} \\
+\href{https://bitbucket.org/ginozab}{\img{imgs/bitbucket-logo_318-55983.pdf} \custombold{bitbucket.org/ginozab}} \\
+\href{https://linkedin.com/in/ginozab}{\faLinkedinSign \custombold{ linkedin.com/in/ginozab}} \\
+\sectionsep
+% \section{Links} 
+% Github:// \href{https://github.com/deedydas}{\custombold{deedydas}} \\
+% LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\custombold{debarghyadas}} \\
+% YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\custombold{DeedyDash007}} \\
+% Twitter://  \href{https://twitter.com/debarghya_das}{\custombold{@debarghya\_das}} \\
+% Quora://  \href{https://www.quora.com/Debarghya-Das}{\custombold{Debarghya-Das}}
+% \sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Skills}
+% \subsection{Programming}
+% \location{Over 5000 lines:}
+% Java \\
+% \location{Over 1000 lines:}
+% C \textbullet{} MIPS Assembly \textbullet{} R \textbullet{} LaTeX \\
+% \location{Familiar:}
+% iOS \textbullet{} Android \textbullet{} MySQL \\
+% \sectionsep
+
+\section{Skills}
+\subsection{Programming}
+\location{3 years:}
+Java \\
+\location{1 year:}
+R Language \textbullet{} \LaTeX \\
+\location{Familiar:}
+C \textbullet{} MIPS Assembly \textbullet{} Python \\
+Bash \textbullet{} SQL \\
+\vspace{.1in}
+\subsection{Software}
+Vim \textbullet{} Tmux \textbullet{} Git \\
+Slack \textbullet{} Gradle \textbullet{} JUnit Testing \\
+Mac OSX \textbullet{} Linux \\
+Eclipse \textbullet{} R Studio \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Major}
+Intro to Computer Science I \\
+Intro to Data Structures \\
+Programming Language Concepts \\
+Multi-Agent and Robotic Systems \\
+Principles of Computer Organization \\
+%Analysis of Algorithms \\
+Research Methods in Computer Science \\
+\sectionsep
+
+\subsection{Minor}
+Intro to Managerial Economics \\
+Microeconomic Theory \\
+Economics of Entrepreneurship I	\\
+International Economics \\
+Economic Statistics \\ 
+Macroeconomic Theory \\
+\sectionsep
+
+% \subsection{Undergraduate}
+% Information Retrieval \\
+% Operating Systems \\
+% Artificial Intelligence + Practicum \\
+% Functional Programming \\
+% Computer Graphics + Practicum \\
+% {\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst) }}} \\
+% Unix Tools and Scripting \\
+% \sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXTRA-CURRICULAR
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Extra-Curricular}
+\location{Tailback | Football}
+Allegheny College \textbullet{} 2012-2013
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2015	     & Cupper Research Scholar\\
+% 2015		 & Alden Scholar/ Dean's List\\
+% % 2014	     & 2\textsuperscript{nd} most points  & Google Code Jam, Qualification Round\\
+% % 2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+% % 2013	     & National  & Jump Trading Challenge Finalist\\
+% % 2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+% % 2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+% % 2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+% % 2010     & National & Comp. Soc. of India's National Programming Contest\\
+% \end{tabular}
+% \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Objective
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Objective}
+% \vspace{2mm}
+% \location{To secure a position in web development, where I can continually learn and efficiently contribute my skills and abilities for the growth
+% of the organization.}
+% %and build my professional career
+% \vspace{4mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Relevant Courses}
+
+% \runsubsection{Principles of Computer Organization}
+% \location{}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \begin{tightemize}
+% 	\item Introduction to MIPS assembly language and C.
+% 	\item Learned the basic organization and operation of computers including logical structure hardware components.
+% 	\item Developed an 8 bit ALU using Logisim.
+% \end{tightemize}
+% \sectionsep
+
+
+
+% \runsubsection{Analysis of Algorithms}
+% \location{}
+% \begin{tightemize}
+% 	\item Develop expertise in mathematical analysis and algorithmic programming methodology.
+% 	\item Cover models of computation, design of efficient algorithms, computational complexity, and NP-completeness.
+% \end{tightemize}
+% \sectionsep
+
+\runsubsection{Principles of Distributed Systems}
+\descript{\footnotesize{| Completion in May 2016}}
+%\location{Completion in May 2016}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+	\item Examined the principles and paradigms associated with the design, implementation, and analysis of distributed systems
+	\item Covered the characterization of distributed system models, remote communication, distributed scheduling, synchronization and mutual exclusion, consistency and replication, and fault tolerance
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{Data Communications and Networks}
+\descript{\footnotesize{| Completion in May 2016}}
+%\location{Completion in May 2016}
+\begin{tightemize}
+	\item Introduced to the theory and techniques of network design and analysis
+	\item Covered data communications concepts, layered network architectures, local and wide area networks, protocols, switching, routing, and security
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Principles of Software Development}
+\location{}
+\begin{tightemize}
+	\item Learned the principles and concepts used in the specification, design, implementation, testing, and maintenance of large software systems
+	\item Worked in a team and developed a transportation scheduling application for a faculty member working with volunteers at Allegheny College
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{Principles of Database Systems}
+\location{}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+	%\item Studied design and implementation issues in database management systems
+	\item Covered data models, logical/physical database design, data access/search techniques, mappings from logical to physical structures, storage, and utilization
+	\item Generated various visual representations of trends seen in real world data using the R language for statistical computation
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Analysis of Algorithms}
+\location{}
+\begin{tightemize}
+  \item Developed an expertise in mathematical analysis and algorithmic programming methodology and covered models of computation, design of efficient algorithms, computational complexity, and NP-completeness
+  \item Worked in a team to develop an algorithm with the goal to determine fair room draw numbers to students at Allegheny College
+\end{tightemize}
+\sectionsep
+
+
+% \runsubsection{Google}
+% \descript{| Software Engineering Intern }
+% \location{May 2013 – Aug 2013 | Mountain View, CA}
+% \begin{tightemize}
+% \item Worked on the YouTube Captions team in primarily vanilla Javascript and Python to plan, design and develop the full stack implementation of a new framework to add and edit Automatic Speech Recognition captions.\item Created a backbone.js-like framework for the Captions editor.\item All code was reviewed, perfected, and pushed to production.\end{tightemize}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Software Development Researcher \\}
+\descript{Gregory Kapfhammer | Allegheny College}
+\location{June 2015 – August 2015 | Meadville, PA}
+
+Worked with \textbf{\href{http://www.cs.allegheny.edu/sites/gkapfham/}{Gregory Kapfhammer}} to develop a system that used machine learning 
+algorithms in the R language for statistical computation, in order to predict the overall effectiveness of test suites based on Java source 
+code metrics. 
+
+
+
+%Worked with \textbf{\href{http://www.cs.allegheny.edu/sites/gkapfham/}{Gregory Kapfhammer}} and used machine learning algorithms in R language for statistical computation to predict the overall effectiveness of test suites based on Java source code metrics. 
+
+
+%to predict the performance of various automatic and manual test generation methods based on source code characteristics.
+%The tools used were MAJOR mutation framework to gather performance information; EvoSuite and CodePro to create automatically generated software tests; and RStudio to visualize the data and make predictions.  
+\sectionsep
+
+\runsubsection{Golf Camp Assistant \\}
+\descript{Rick Hunter | Jr. Golf Academy}
+\location{June 2014 – August 2014 | Chino, CA}
+Assisted groups of approximately 10 children ages 5 to 13 years old with golf drills
+\sectionsep
+
+% \runsubsection{Cornell Phonetics Lab}
+% \descript{| Head Undergraduate Researcher}
+% \location{Mar 2012 – May 2013 | Ithaca, NY}
+% Lead the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. Publication submitted.
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Honors
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Honors} 
+\begin{tabular}{rll}
+2015	     & Cupper Research Scholar & 1 of 2 chosen for a research opportunity\\
+%&\textbullet{} Personally selected by professors in the computer science department\\
+2015		 & Alden Scholar/ Dean's List & Achieved a GPA of 3.20 or higher\\
+% 2014	     & 2\textsuperscript{nd} most points  & Google Code Jam, Qualification Round\\
+% 2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+% 2013	     & National  & Jump Trading Challenge Finalist\\
+% 2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+% 2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+% 2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+% 2010     & National & Comp. Soc. of India's National Programming Contest\\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Societies} 
+
+% \begin{tabular}{rll}
+% 2014 	& top 12\%ile    & Tau Beta Pi Engineering Honor Society\\
+% 2014   & National   & The Global Leadership and Education Forum (tGELF)\\
+% 2012   &  National  & Golden Key International Honor Society\\
+% 2012   &  National   & National Society of Collegiate Scholars\\
+% \end{tabular}
+% \sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
